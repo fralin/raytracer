@@ -1,6 +1,7 @@
 sudo: require
 language: cpp
 compiler: gcc
+dist: trusty
 
 before_install:
   - mkdir build
