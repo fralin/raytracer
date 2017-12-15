@@ -131,7 +131,7 @@ int main (int argc, char * argv[]) {
 		M.at<Vec3b>(ix,iy)[2] = h_image[i].b;
 	}
 	imshow ("Rendu",M);
-	waitKey(0);
+	//waitKey(0);
 	free(h_image);
 	free(h_sphere);
 	return EXIT_SUCCESS;

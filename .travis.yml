@@ -1,0 +1,15 @@
+sudo: require
+language: cpp
+compiler: gcc
+
+before_install:
+  - sudo pip install codecov
+
+script:
+  - make
+  - ./hello
+  - ./get_code_cov.sh
+  - codecov
+  
+after_success:
+- bash <(curl -s https://codecov.io/bash)
