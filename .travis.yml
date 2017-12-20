@@ -2,8 +2,12 @@ sudo: require
 language: cpp
 dist: trusty
 
+compiler:
+  - gcc
+
 before_script:
   - sudo apt-get update -q
+  - sudo apt-get install cmake
   - sudo apt-get install libopencv-dev
   - mkdir build
   - cd build
